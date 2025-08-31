@@ -1,7 +1,3 @@
-requirements.txt
-
-
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -103,5 +99,6 @@ result_df = calculate_laundering_probability(transactions_df)
 sorted_results = result_df.sort_values(by='ml_probability', ascending=False)
 
 st.dataframe(sorted_results)
+
 
 
